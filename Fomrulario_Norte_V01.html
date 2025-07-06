@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auditoría Meta Ads · Brújula Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {margin: 0; padding: 0; font-family: 'Montserrat', Arial, sans-serif; background: #f9f9f9;}
+    .hero-bg {
+      background: url('Computadoras.png') center center/cover no-repeat;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .form-container {
+      background: rgba(255,255,255,0.98);
+      border-radius: 24px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.13);
+      max-width: 510px;
+      width: 100%;
+      padding: 2.3rem 2rem 2rem 2rem;
+      z-index: 2;
+    }
+    .form-title {font-weight: 700; font-size: 2rem; color: #222; margin-bottom: 0.25em;}
+    .form-sub {color: #444; font-size: 1.07em; margin-bottom: 1.3em;}
+    .form-label { font-weight: 600; color: #222; }
+    .form-control { border-radius: 12px; min-height: 44px; font-size: 1em; }
+    .btn-brujula {
+      background: #E31F26; color: #fff; border-radius: 12px;
+      font-weight: 600; letter-spacing: 0.03em; font-size: 1.13em; padding: 0.85em 0;
+      transition: background 0.2s;
+      box-shadow: 0 2px 16px rgba(227,31,38,0.07);
+      border: none;
+    }
+    .btn-brujula:hover, .btn-brujula:focus {
+      background: #B2B4B6; color: #222;
+    }
+    .privacy-badge {
+      font-size: 0.97em; color: #555; margin-top: 1.3em; text-align: center;
+    }
+    .url-btn {
+      margin-left: 7px; font-size: 0.99em; padding: 0.36em 1em;
+      background: #E31F26; color: #fff; border-radius: 7px; border:none; font-weight:600;
+      transition: background 0.17s;
+    }
+    .url-btn:hover { background: #B2B4B6; color: #222; }
+    .feedback {font-size: 0.98em; color: #cc2020; margin-top: 0.2em;}
+    @media (max-width: 600px) {
+      .form-container { padding: 1.3rem 0.6rem; }
+      .hero-bg { min-height: 630px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-bg">
+    <form class="form-container" id="formNorte">
+      <div class="form-title">🧭 Auditoría Express de Redes Sociales</div>
+      <div class="form-sub">Diagnóstico gratuito y personalizado de tus perfiles en Facebook e Instagram. Sin compromiso, 100% confidencial.</div>
+      <div class="mb-3">
+        <label class="form-label" for="nombre">Nombre o marca</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ej. Brújula Digital" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="giro">Giro o actividad</label>
+        <input type="text" class="form-control" id="giro" placeholder="Ej. Agencia de Marketing" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="facebook">URL de Facebook</label>
+        <div class="d-flex align-items-center">
+          <input type="url" class="form-control" id="facebook" placeholder="Ej. https://facebook.com/tuempresa">
+          <button type="button" class="url-btn" onclick="validarURL('facebook','fb_feedback')">Validar</button>
+        </div>
+        <div id="fb_feedback" class="feedback"></div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="instagram">URL de Instagram</label>
+        <div class="d-flex align-items-center">
+          <input type="url" class="form-control" id="instagram" placeholder="Ej. https://instagram.com/tuempresa">
+          <button type="button" class="url-btn" onclick="validarURL('instagram','ig_feedback')">Validar</button>
+        </div>
+        <div id="ig_feedback" class="feedback"></div>
+      </div>
+      <hr>
+      <div class="mb-2"><strong>🕵️ Competencia Directa</strong><br><span style="font-size:0.97em;color:#555">Agrega hasta 3 competidores con enlaces verificados:</span></div>
+      <div class="mb-3">
+        <label class="form-label" for="comp1">Nombre Competidor #1</label>
+        <input type="text" class="form-control" id="comp1">
+        <label class="form-label" for="comp1_url">URL Competidor #1</label>
+        <div class="d-flex align-items-center">
+          <input type="url" class="form-control" id="comp1_url" placeholder="https://...">
+          <button type="button" class="url-btn" onclick="validarURL('comp1_url','comp1_url_feedback')">Validar</button>
+        </div>
+        <div id="comp1_url_feedback" class="feedback"></div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="comp2">Nombre Competidor #2</label>
+        <input type="text" class="form-control" id="comp2">
+        <label class="form-label" for="comp2_url">URL Competidor #2</label>
+        <div class="d-flex align-items-center">
+          <input type="url" class="form-control" id="comp2_url" placeholder="https://...">
+          <button type="button" class="url-btn" onclick="validarURL('comp2_url','comp2_url_feedback')">Validar</button>
+        </div>
+        <div id="comp2_url_feedback" class="feedback"></div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="comp3">Nombre Competidor #3</label>
+        <input type="text" class="form-control" id="comp3">
+        <label class="form-label" for="comp3_url">URL Competidor #3</label>
+        <div class="d-flex align-items-center">
+          <input type="url" class="form-control" id="comp3_url" placeholder="https://...">
+          <button type="button" class="url-btn" onclick="validarURL('comp3_url','comp3_url_feedback')">Validar</button>
+        </div>
+        <div id="comp3_url_feedback" class="feedback"></div>
+      </div>
+      <hr>
+      <div class="mb-4">
+        <label class="form-label" for="inversion">¿Estarías dispuesto(a) a invertir en campañas si el diagnóstico demuestra potencial?</label>
+        <select class="form-control" id="inversion" required>
+          <option value="">Selecciona una opción</option>
+          <option value="si">Sí, estoy dispuesto(a)</option>
+          <option value="no">No, solo quiero información</option>
+          <option value="depende">Depende del resultado</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-brujula w-100">Iniciar Diagnóstico</button>
+      <div class="privacy-badge">Tus datos están protegidos y sólo se usan para tu diagnóstico.</div>
+      <div id="resultado" class="mt-4"></div>
+    </form>
+  </div>
+
+  <script>
+    function validarURL(id, feedbackId) {
+      const url = document.getElementById(id).value;
+      const reg = /^(https?:\/\/)?(www\.)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$/;
+      document.getElementById(feedbackId).textContent = reg.test(url) ? "✅ URL válida" : "❌ URL inválida.";
+    }
+    document.getElementById("formNorte").addEventListener("submit", function(e) {
+      e.preventDefault();
+      // Validación final antes de enviar
+      const fb = document.getElementById("facebook").value;
+      const ig = document.getElementById("instagram").value;
+      const fbOK = /^(https?:\/\/)?(www\.)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$/.test(fb);
+      const igOK = /^(https?:\/\/)?(www\.)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$/.test(ig);
+      validarURL('facebook','fb_feedback');
+      validarURL('instagram','ig_feedback');
+      // Validar competencia
+      ['comp1_url','comp2_url','comp3_url'].forEach(function(id) {
+        if(document.getElementById(id).value) validarURL(id, id+"_feedback");
+      });
+      if (fb && !fbOK || ig && !igOK) {
+        document.getElementById("resultado").innerHTML = `<div class='alert alert-danger mt-3'>Corrige las URLs antes de enviar.</div>`;
+        return;
+      }
+      document.getElementById("resultado").innerHTML = `<div class='alert alert-success mt-3'>Gracias. Tu diagnóstico fue enviado con éxito.</div>`;
+    });
+  </script>
+
+</body>
+</html>
