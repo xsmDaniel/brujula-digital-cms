@@ -1,0 +1,48 @@
+{
+  "area_institucional": "Marketing y Estrategias Cardinales",
+  "version": "1.1",
+  "estado_area": "activo",
+  "descripcion": "Bitácora institucional que vincula los módulos cardinales de Brújula Digital para operar narrativa estratégica, registro por cliente y validación consultiva por bloque.",
+  "anotaciones_metodologicas": {
+    "proposito_general": "Este archivo actúa como nodo principal que conecta todos los módulos cardinales vinculados al área de Marketing Estratégico.",
+    "uso_principal": "Desde este punto se despliegan narrativas (MK), se registra avance por cliente y se valida la activación estructural de cada bloque cardinal.",
+    "ventaja_cardinal": "Permite trazabilidad por bloque, vinculación de contenido modular, y activación automatizada en CMS o dashboards internos.",
+    "razonamiento_json": {
+      "marketing_estrategico.json": "Contiene los prompts MK_01 a MK_10 por bloque cardinal, con narrativa institucional y beneficios estratégicos. Se utiliza para fichas, CMS, manuales o presentaciones consultivas.",
+      "clientes_cardinales.json": "Permite registrar el estado de cada cliente por bloque cardinal, prompts activos, fichas generadas y observaciones. Es la bitácora operativa del sistema.",
+      "validacion_cardinal.json": "Vincula cliente ID con panel consultivo por bloque, evaluando si los prompts fueron usados, si hubo documentación, activación técnica y recomendaciones automáticas."
+    },
+    "recomendaciones_tecnicas": [
+      "Mantener archivos JSON separados para modularidad, escalabilidad y control institucional.",
+      "Utilizar campos estándar como cliente_id para conectar datos entre módulos.",
+      "Activar exportaciones PDF, Word o visuales a partir del estado validado por bloque.",
+      "Permitir que CMS consulte este archivo para activar funcionalidades por etapa."
+    ]
+  },
+  "estructura_cardinal_vinculada": {
+    "bloques_activos": ["NORTE", "ESTE", "SUR", "OESTE", "CENTRAL"],
+    "panel_direccion": "activo",
+    "estado_consolidacion": {
+      "prompts_narrativos": "completos",
+      "fichas_cardinales": "listas",
+      "clientes_registrados": "estructura activa",
+      "validaciones_operativas": "activas y conectadas"
+    }
+  },
+  "modulos_vinculados": {
+    "marketing_estrategico": "modulos/marketing_estrategico.json",
+    "clientes_cardinales": "modulos/clientes_cardinales.json",
+    "validacion_cardinal": "modulos/validacion_cardinal.json"
+  },
+  "plantillas_disponibles": {
+    "fichas_cardinales_word": true,
+    "panel_validacion_editable": true,
+    "plantilla_consultiva_pdf": true,
+    "html_por_bloque_para_CMS": true
+  },
+  "observaciones_finales": {
+    "estado_actual": "Fase completa de estructuración cardinal",
+    "uso_recomendado": "Integración inmediata en CMS interno o panel consultivo institucional.",
+    "siguiente_fase": "Automatización de registros dinámicos, exportación de validaciones, integración a panel de Dirección."
+  }
+}

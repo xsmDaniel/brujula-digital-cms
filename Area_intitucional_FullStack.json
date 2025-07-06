@@ -1,0 +1,97 @@
+{
+  "area": "Fullstack",
+  "version": "1.0",
+  "descripcion": "Prompts estratégicos para desarrollo técnico funcional dentro del ecosistema Brújula Digital.",
+  "prompts": [
+    {
+      "codigo": "FS_01",
+      "nombre": "Desarrollo Frontend para Formulario Inteligente",
+      "descripcion": "Formulario HTML completo con validación, diseño responsivo y lógica condicional.",
+      "fase_diamante": "Develop",
+      "modulo_cardinal": ["NORTE", "ESTE"],
+      "tipo_entregable": "HTML + CSS + JS",
+      "estado_prompt": "activado"
+    },
+    {
+      "codigo": "FS_02",
+      "nombre": "Integración CMS con Visual Composer",
+      "descripcion": "Adaptación de formularios y módulos en entorno WordPress con compatibilidad modular.",
+      "fase_diamante": "Deliver",
+      "modulo_cardinal": ["SUR"],
+      "tipo_entregable": "HTML + Shortcode CMS",
+      "estado_prompt": "activado"
+    },
+    {
+      "codigo": "FS_03",
+      "nombre": "Consumo y Visualización de API externa",
+      "descripcion": "Conexión a servicios REST + visualización dinámica con librerías de gráficos.",
+      "fase_diamante": "Develop",
+      "modulo_cardinal": ["OESTE", "FULL"],
+      "tipo_entregable": "JS + JSON + Chart.js",
+      "estado_prompt": "en prueba"
+    },
+    {
+      "codigo": "FS_04",
+      "nombre": "Automatización Operativa con JS",
+      "descripcion": "Activación de lógicas internas en formularios, campos condicionales y scoring automatizado.",
+      "fase_diamante": "Develop",
+      "modulo_cardinal": ["ESTE", "SUR"],
+      "tipo_entregable": "JS modular",
+      "estado_prompt": "activado"
+    },
+    {
+      "codigo": "FS_05",
+      "nombre": "Modelado JSON Institucional",
+      "descripcion": "Definición de estructuras de datos internas para prompts, formularios, bitácoras y entregables.",
+      "fase_diamante": "Define",
+      "modulo_cardinal": ["FULL"],
+      "tipo_entregable": "JSON estructurado",
+      "estado_prompt": "pendiente"
+    },
+    {
+      "codigo": "FS_06",
+      "nombre": "Testing y QA Técnico",
+      "descripcion": "Validación técnica por checklist, pruebas de funcionalidad y simulación de errores.",
+      "fase_diamante": "Deliver",
+      "modulo_cardinal": ["FULL"],
+      "tipo_entregable": "Checklist + pruebas unitarias",
+      "estado_prompt": "activado"
+    },
+    {
+      "codigo": "FS_07",
+      "nombre": "Conexión de Formularios al Backend",
+      "descripcion": "Integración de formularios con bases de datos o planillas internas vía lógica JSON y DataOps.",
+      "fase_diamante": "Deliver",
+      "modulo_cardinal": ["SUR", "FULL"],
+      "tipo_entregable": "JS + conexión JSON",
+      "estado_prompt": "en desarrollo"
+    },
+    {
+      "codigo": "FS_08",
+      "nombre": "Bitácora Técnica Automatizada",
+      "descripcion": "Registro por etapa, timestamp, scoring, errores y mejoras aplicadas por módulo técnico.",
+      "fase_diamante": "Develop",
+      "modulo_cardinal": ["FULL", "Dirección"],
+      "tipo_entregable": "JS + base JSON",
+      "estado_prompt": "activado"
+    },
+    {
+      "codigo": "FS_09",
+      "nombre": "Generación Automática de Entregables",
+      "descripcion": "Activación de PDF, emails institucionales o resúmenes dinámicos post-formulario.",
+      "fase_diamante": "Deliver",
+      "modulo_cardinal": ["ESTE", "SUR"],
+      "tipo_entregable": "JS + templates PDF/email",
+      "estado_prompt": "en desarrollo"
+    },
+    {
+      "codigo": "FS_10",
+      "nombre": "Dashboard Técnico Institucional",
+      "descripcion": "Panel visual para Dirección con métricas por etapa, respuestas, planes activados y flujos operativos.",
+      "fase_diamante": "Deliver",
+      "modulo_cardinal": ["Dirección", "FULL"],
+      "tipo_entregable": "HTML + JS + JSON",
+      "estado_prompt": "pendiente"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "validacion_cardinal": {
+    "cliente": "[Nombre del cliente]",
+    "etapa_proyecto": "[Diagnóstico / Captación / Desarrollo / Conversión / Dirección]",
+    "fecha_validacion": "[DD/MM/AAAA]",
+    "bloques": {
+      "NORTE": {
+        "mk_narrativa_usado": true,
+        "mk_valor_usado": true,
+        "documentacion": "Ficha",
+        "activacion_cms": true,
+        "observaciones": ""
+      },
+      "ESTE": {
+        "mk_narrativa_usado": true,
+        "mk_valor_usado": true,
+        "documentacion": "Landing",
+        "activacion_cms": true,
+        "observaciones": ""
+      },
+      "SUR": {
+        "mk_narrativa_usado": true,
+        "mk_valor_usado": true,
+        "documentacion": "Manual",
+        "activacion_cms": true,
+        "observaciones": ""
+      },
+      "OESTE": {
+        "mk_narrativa_usado": true,
+        "mk_valor_usado": true,
+        "documentacion": "Ficha Producto",
+        "activacion_cms": true,
+        "observaciones": ""
+      },
+      "CENTRAL": {
+        "mk_narrativa_usado": true,
+        "mk_valor_usado": true,
+        "documentacion": "Panel Dirección",
+        "activacion_cms": true,
+        "observaciones": ""
+      }
+    },
+    "evaluador": "[Nombre del evaluador]",
+    "estado_general": "Validado",
+    "siguientes_pasos": "[Texto libre]"
+  }
+}

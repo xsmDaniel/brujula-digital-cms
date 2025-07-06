@@ -1,0 +1,116 @@
+{
+  "area": "Fullstack",
+  "version": "1.0",
+  "base_datos": [
+    {
+      "proyecto": "Formulario Inteligente NORTE",
+      "codigo_prompt": "FS_01",
+      "fase": "Deliver",
+      "modulo_cardinal": "NORTE",
+      "entregable": "HTML + CSS + JS",
+      "fecha_inicio": "2025-07-01",
+      "estado_actual": "completado",
+      "responsable_tecnico": "Fullstack Core",
+      "observaciones": "Validado en CMS y funcional"
+    },
+    {
+      "proyecto": "Integración WordPress",
+      "codigo_prompt": "FS_02",
+      "fase": "Deliver",
+      "modulo_cardinal": "SUR",
+      "entregable": "Shortcodes CMS",
+      "fecha_inicio": "2025-07-04",
+      "estado_actual": "activo",
+      "responsable_tecnico": "CMS Team",
+      "observaciones": "Compatible con Visual Composer y Elementor"
+    },
+    {
+      "proyecto": "API Meta Ads Viewer",
+      "codigo_prompt": "FS_03",
+      "fase": "Develop",
+      "modulo_cardinal": "OESTE",
+      "entregable": "JS + JSON + Charts",
+      "fecha_inicio": "2025-07-05",
+      "estado_actual": "en pruebas",
+      "responsable_tecnico": "API Devs",
+      "observaciones": "Conexión establecida, visualización parcial"
+    },
+    {
+      "proyecto": "Scoring Automático Fase ESTE",
+      "codigo_prompt": "FS_04",
+      "fase": "Develop",
+      "modulo_cardinal": "ESTE",
+      "entregable": "JS condicional",
+      "fecha_inicio": "2025-07-06",
+      "estado_actual": "activo",
+      "responsable_tecnico": "Frontend Ops",
+      "observaciones": "Integrado al formulario inteligente"
+    },
+    {
+      "proyecto": "JSON Institucional Prompts",
+      "codigo_prompt": "FS_05",
+      "fase": "Define",
+      "modulo_cardinal": "FULL",
+      "entregable": "JSON estructurado",
+      "fecha_inicio": "2025-07-07",
+      "estado_actual": "completado",
+      "responsable_tecnico": "DataOps Team",
+      "observaciones": "Base de prompts documentada y activa"
+    },
+    {
+      "proyecto": "QA Técnico Formularios",
+      "codigo_prompt": "FS_06",
+      "fase": "Deliver",
+      "modulo_cardinal": "FULL",
+      "entregable": "Checklist QA",
+      "fecha_inicio": "2025-07-07",
+      "estado_actual": "en ejecución",
+      "responsable_tecnico": "Fullstack QA",
+      "observaciones": "Checklist de NORTE listo, ESTE pendiente"
+    },
+    {
+      "proyecto": "Conexión a Base Operativa",
+      "codigo_prompt": "FS_07",
+      "fase": "Deliver",
+      "modulo_cardinal": "SUR",
+      "entregable": "JSON + almacenamiento",
+      "fecha_inicio": "2025-07-08",
+      "estado_actual": "pendiente",
+      "responsable_tecnico": "BackOps",
+      "observaciones": "Requiere validación de acceso y seguridad"
+    },
+    {
+      "proyecto": "Bitácora Técnica Automatizada",
+      "codigo_prompt": "FS_08",
+      "fase": "Develop",
+      "modulo_cardinal": "FULL",
+      "entregable": "Logging + Historial",
+      "fecha_inicio": "2025-07-08",
+      "estado_actual": "activo",
+      "responsable_tecnico": "Core Logging",
+      "observaciones": "Se integra por timestamp y scoring"
+    },
+    {
+      "proyecto": "Generador de Entregables Automático",
+      "codigo_prompt": "FS_09",
+      "fase": "Deliver",
+      "modulo_cardinal": "ESTE",
+      "entregable": "PDF + Email",
+      "fecha_inicio": "2025-07-09",
+      "estado_actual": "en desarrollo",
+      "responsable_tecnico": "Delivery Engine",
+      "observaciones": "Template dinámico en progreso"
+    },
+    {
+      "proyecto": "Dashboard Técnico Institucional",
+      "codigo_prompt": "FS_10",
+      "fase": "Deliver",
+      "modulo_cardinal": "FULL",
+      "entregable": "Panel HTML + JSON",
+      "fecha_inicio": "2025-07-10",
+      "estado_actual": "pendiente",
+      "responsable_tecnico": "UX/DataView Team",
+      "observaciones": "Diseño UI iniciado, estructura lógica en revisión"
+    }
+  ]
+}
