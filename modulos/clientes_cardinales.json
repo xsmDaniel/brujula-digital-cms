@@ -1,0 +1,67 @@
+{
+  "modulo": "Registro de clientes cardinales",
+  "version": "1.0",
+  "descripcion": "Archivo institucional para trazabilidad por cliente, proyecto, etapa cardinal y uso de módulos narrativos, técnicos y comerciales en Brújula Digital.",
+  "estado_modulo": "activo",
+  "anotaciones_institucionales": {
+    "estructura_dinamica": "Este archivo permite registrar múltiples clientes, cada uno con su estado por bloque cardinal, prompts usados, documentación generada y observaciones.",
+    "uso_sugerido": [
+      "Consulta desde panel CMS o dashboard institucional",
+      "Activación automática del panel de validación",
+      "Exportación PDF por cliente o ficha técnica",
+      "Control de avance por proyecto y equipo consultivo"
+    ],
+    "vinculos_requeridos": [
+      "marketing_estrategico.json",
+      "validacion_cardinal.json",
+      "Area_institucional_Marketing_y_Estrategias.json"
+    ]
+  },
+  "clientes": [
+    {
+      "cliente_id": "CL001",
+      "nombre": "Grupo Elipse Consultores",
+      "proyecto": "Consultoría Digital NORTE + ESTE",
+      "evaluador": "Dirección Comercial",
+      "fecha_registro": "2025-07-06",
+      "etapa_actual": "Captación + Diagnóstico",
+      "bloques_activos": ["NORTE", "ESTE"],
+      "prompts_usados": ["MK_01", "MK_02", "MK_03", "MK_04"],
+      "ficha_tecnica_generada": true,
+      "documentacion_adicional": ["Ficha Institucional NORTE", "Landing Comercial ESTE"],
+      "panel_direccion": false,
+      "estado_validacion": "Parcial",
+      "observaciones": "Pendiente activar SUR para conectar la estructura técnica."
+    },
+    {
+      "cliente_id": "CL002",
+      "nombre": "Atlas Ingenierías",
+      "proyecto": "Sistema Técnico + Dirección",
+      "evaluador": "Dirección Técnica",
+      "fecha_registro": "2025-07-06",
+      "etapa_actual": "Desarrollo + Consolidación",
+      "bloques_activos": ["SUR", "CENTRAL"],
+      "prompts_usados": ["MK_05", "MK_06", "MK_09", "MK_10"],
+      "ficha_tecnica_generada": true,
+      "documentacion_adicional": ["Manual Fullstack SUR", "Panel Estratégico CENTRAL"],
+      "panel_direccion": true,
+      "estado_validacion": "En revisión",
+      "observaciones": "Validar OESTE si se requiere activar catálogo institucional."
+    },
+    {
+      "cliente_id": "CL003",
+      "nombre": "Nube Cardio",
+      "proyecto": "E-commerce Institucional",
+      "evaluador": "Unidad Comercial Oeste",
+      "fecha_registro": "2025-07-06",
+      "etapa_actual": "Conversión y Venta",
+      "bloques_activos": ["OESTE"],
+      "prompts_usados": ["MK_07", "MK_08"],
+      "ficha_tecnica_generada": true,
+      "documentacion_adicional": ["Ficha Producto + Catálogo CMS"],
+      "panel_direccion": false,
+      "estado_validacion": "Validado",
+      "observaciones": "Proceso comercial completo, replicable en otras verticales."
+    }
+  ]
+}

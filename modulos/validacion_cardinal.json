@@ -1,0 +1,127 @@
+{
+  "modulo": "Validación Cardinal Institucional",
+  "version": "1.0",
+  "descripcion": "Panel de validación por cliente, usado para revisar la activación de bloques cardinales, uso de prompts MK y documentación generada en el ecosistema Brújula Digital.",
+  "estado_modulo": "activo",
+  "anotaciones_tecnicas": {
+    "vinculo_requerido": "clientes_cardinales.json",
+    "modo_uso": [
+      "Evaluación por cliente (cliente_id)",
+      "Llamado desde dashboard por etapa de proyecto",
+      "Activación automática de recomendaciones y observaciones por bloque",
+      "Exportación para uso institucional o consultivo (PDF, Word)"
+    ],
+    "estructura_replicable": "Puede clonarse por vertical o unidad interna",
+    "uso_operativo": "Dirección general, consultoría técnica, gestión comercial"
+  },
+  "validaciones": [
+    {
+      "cliente_id": "CL001",
+      "estado_general": "Parcial",
+      "bloques": {
+        "NORTE": {
+          "validacion_prompt": true,
+          "documentacion": true,
+          "activacion_cms": true,
+          "recomendacion": "Validar si el scoring fue integrado al panel."
+        },
+        "ESTE": {
+          "validacion_prompt": true,
+          "documentacion": true,
+          "activacion_cms": true,
+          "recomendacion": "Activar formularios cardinales para seguimiento comercial."
+        },
+        "SUR": {
+          "validacion_prompt": false,
+          "documentacion": false,
+          "activacion_cms": false,
+          "recomendacion": "Diseñar estructura técnica Fullstack para este cliente."
+        },
+        "OESTE": {
+          "validacion_prompt": false,
+          "documentacion": false,
+          "activacion_cms": false,
+          "recomendacion": "No aplica para este proyecto."
+        },
+        "CENTRAL": {
+          "validacion_prompt": false,
+          "documentacion": false,
+          "activacion_cms": false,
+          "recomendacion": "Pendiente activar panel de Dirección."
+        }
+      }
+    },
+    {
+      "cliente_id": "CL002",
+      "estado_general": "En revisión",
+      "bloques": {
+        "NORTE": {
+          "validacion_prompt": false,
+          "documentacion": false,
+          "activacion_cms": false,
+          "recomendacion": "No contemplado en este proyecto."
+        },
+        "ESTE": {
+          "validacion_prompt": false,
+          "documentacion": false,
+          "activacion_cms": false,
+          "recomendacion": "No contemplado en este proyecto."
+        },
+        "SUR": {
+          "validacion_prompt": true,
+          "documentacion": true,
+          "activacion_cms": true,
+          "recomendacion": "Validar si backend está vinculado al CMS."
+        },
+        "OESTE": {
+          "validacion_prompt": false,
+          "documentacion": false,
+          "activacion_cms": false,
+          "recomendacion": "Explorar si se requiere catálogo técnico."
+        },
+        "CENTRAL": {
+          "validacion_prompt": true,
+          "documentacion": true,
+          "activacion_cms": true,
+          "recomendacion": "Consolidar reportes en panel institucional."
+        }
+      }
+    },
+    {
+      "cliente_id": "CL003",
+      "estado_general": "Validado",
+      "bloques": {
+        "NORTE": {
+          "validacion_prompt": false,
+          "documentacion": false,
+          "activacion_cms": false,
+          "recomendacion": "No necesario para este flujo comercial."
+        },
+        "ESTE": {
+          "validacion_prompt": false,
+          "documentacion": false,
+          "activacion_cms": false,
+          "recomendacion": "Ya resuelto vía OESTE."
+        },
+        "SUR": {
+          "validacion_prompt": true,
+          "documentacion": true,
+          "activacion_cms": true,
+          "recomendacion": "Revisar lógica técnica de producto vinculado."
+        },
+        "OESTE": {
+          "validacion_prompt": true,
+          "documentacion": true,
+          "activacion_cms": true,
+          "recomendacion": "Ficha e-commerce validada y conectada a CMS."
+        },
+        "CENTRAL": {
+          "validacion_prompt": false,
+          "documentacion": false,
+          "activacion_cms": false,
+          "recomendacion": "No requiere panel de Dirección por tamaño de proyecto."
+        }
+      }
+    }
+  ]
+}

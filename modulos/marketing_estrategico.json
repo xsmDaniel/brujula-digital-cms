@@ -1,0 +1,52 @@
+{
+  "modulo": "Marketing Estratégico",
+  "version": "1.4",
+  "descripcion": "Módulo narrativo institucional que contiene los prompts cardinales de Brújula Digital para activación estratégica, redacción institucional y propuesta de valor.",
+  "estado_modulo": "activo",
+  "documentacion_tecnica": {
+    "estructura_por_bloque": {
+      "NORTE": {
+        "prompts": ["MK_01", "MK_02"],
+        "descripcion": "Se activa tras el diagnóstico técnico inicial. Útil para onboarding, auditoría y consultoría express."
+      },
+      "ESTE": {
+        "prompts": ["MK_03", "MK_04"],
+        "descripcion": "Se utiliza al estructurar campañas comerciales y contenido visible institucional."
+      },
+      "SUR": {
+        "prompts": ["MK_05", "MK_06"],
+        "descripcion": "Bloque técnico de desarrollo y automatización. Se vincula al backend y funcionalidad institucional."
+      },
+      "OESTE": {
+        "prompts": ["MK_07", "MK_08"],
+        "descripcion": "Reservado para E-commerce: presentación de productos, funnels y venta institucional."
+      },
+      "CENTRAL": {
+        "prompts": ["MK_09", "MK_10"],
+        "descripcion": "Integra todos los bloques. Panel de Dirección, reportes y gobernanza metodológica."
+      }
+    },
+    "activacion_en_sistema": {
+      "tipo_ejecucion": "Dinámica por bloque cardinal",
+      "mecanismo": "Se ejecutan desde CMS, dashboard o panel de Dirección según etapa del proyecto",
+      "usos": ["Ficha cardinal", "Landing CMS", "Presentación estratégica", "Manual institucional"]
+    },
+    "integracion_externa": {
+      "modulo_principal": "Area_institucional_Marketing_y_Estrategias.json",
+      "llamado_desde": "modulos_vinculados.marketing_estrategico",
+      "ruta_sugerida": "modulos/marketing_estrategico.json"
+    }
+  },
+  "prompts": [
+    { "codigo": "MK_01", "nombre": "Redacción Institucional NORTE", "bloque_cardinal": "NORTE", "tagline": "Descubre lo que ves... y lo que no estás viendo.", "tipo_contenido": "Narrativa Institucional", "descripcion": "Propósito estratégico del bloque NORTE.", "contenido": "Diagnóstico consultivo inicial que abre la brújula estratégica y detecta oportunidades no evidentes...", "usos": ["Ficha Institucional", "Presentación Comercial"], "estado_prompt": "activo" },
+    { "codigo": "MK_02", "nombre": "Propuesta de Valor NORTE", "bloque_cardinal": "NORTE", "tipo_contenido": "Listado de Beneficios", "descripcion": "Beneficios derivados del diagnóstico estratégico inicial.", "beneficios": ["Lectura del estado digital", "Scoring institucional", "Ficha consultiva"], "usos": ["Onboarding", "Consultoría Express"], "estado_prompt": "activo" },
+    { "codigo": "MK_03", "nombre": "Redacción Institucional ESTE", "bloque_cardinal": "ESTE", "tagline": "Haz que te vean por las razones correctas.", "tipo_contenido": "Narrativa Institucional", "descripcion": "Expansión comercial centrada en la estrategia de captación.", "contenido": "Activación publicitaria con dirección estratégica, perfil de cliente y narrativa comercial...", "usos": ["Landing CMS", "Captación digital"], "estado_prompt": "activo" },
+    { "codigo": "MK_04", "nombre": "Propuesta de Valor ESTE", "bloque_cardinal": "ESTE", "tipo_contenido": "Listado de Beneficios", "descripcion": "Beneficios relacionados con la visibilidad y segmentación comercial.", "beneficios": ["Campañas estratégicas", "Contenido institucional", "Formularios cardinales"], "usos": ["Consultoría externa", "CMS narrativo"], "estado_prompt": "activo" },
+    { "codigo": "MK_05", "nombre": "Redacción Institucional SUR", "bloque_cardinal": "SUR", "tagline": "Que el sistema trabaje mientras tú duermes.", "tipo_contenido": "Narrativa Institucional", "descripcion": "Eje técnico que convierte estrategia en estructura funcional.", "contenido": "Automatización, conexión backend, formularios inteligentes y sistemas replicables...", "usos": ["Manual técnico", "Ficha Fullstack"], "estado_prompt": "activo" },
+    { "codigo": "MK_06", "nombre": "Propuesta de Valor SUR", "bloque_cardinal": "SUR", "tipo_contenido": "Listado de Beneficios", "descripcion": "Impacto operativo del bloque de desarrollo institucional.", "beneficios": ["Automatización", "Estructura escalable", "Bitácora técnica"], "usos": ["Dirección Técnica", "Implementación funcional"], "estado_prompt": "activo" },
+    { "codigo": "MK_07", "nombre": "Redacción Institucional OESTE", "bloque_cardinal": "OESTE", "tagline": "Convierte intención en transacción.", "tipo_contenido": "Narrativa Institucional", "descripcion": "Lógica de presentación comercial y venta digital.", "contenido": "Diseño de fichas, medios de pago y experiencia de usuario e-commerce...", "usos": ["Catálogo", "Ficha de producto", "Landing comercial"], "estado_prompt": "activo" },
+    { "codigo": "MK_08", "nombre": "Propuesta de Valor OESTE", "bloque_cardinal": "OESTE", "tipo_contenido": "Listado de Beneficios", "descripcion": "Beneficios funcionales y estratégicos del bloque comercial.", "beneficios": ["Presentación institucional", "Conversión efectiva", "Integración CMS"], "usos": ["Consultoría E-commerce", "Catálogo digital"], "estado_prompt": "activo" },
+    { "codigo": "MK_09", "nombre": "Redacción Institucional CENTRAL", "bloque_cardinal": "CENTRAL", "tagline": "Una brújula no da vueltas… te da dirección.", "tipo_contenido": "Narrativa Institucional", "descripcion": "Texto que define el sistema organizador de Brújula Digital.", "contenido": "Paneles, reportes, bitácoras y conexión de módulos cardinales a una dirección común...", "usos": ["Panel CMS", "Consultoría institucional"], "estado_prompt": "activo" },
+    { "codigo": "MK_10", "nombre": "Propuesta de Valor CENTRAL", "bloque_cardinal": "CENTRAL", "tipo_contenido": "Listado de Beneficios", "descripcion": "Impacto metodológico del sistema cardinal integrado.", "beneficios": ["Visión total", "Activación estratégica", "Sistema replicable"], "usos": ["Dirección General", "Reportes estratégicos"], "estado_prompt": "activo" }
+  ]
+}
