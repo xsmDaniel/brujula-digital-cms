@@ -37,3 +37,4 @@ brujula-digital-cms/
 │   └── ...                                    → Resto de fichas por bloque
 │
 └── README.md                                  → Documentación general y guía técnica
+
